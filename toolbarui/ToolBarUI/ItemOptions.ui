@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolBarUIItemOptions</class>
+ <widget class="QWidget" name="ToolBarUIItemOptions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>537</width>
+    <height>439</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QComboBox" name="toolbarCmb"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Reactions</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="reactionAddBtn">
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset theme="list-add">
+           <normaloff>../../../../../.designer/backup</normaloff>../../../../../.designer/backup</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="reactionRemoveBtn">
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset theme="list-remove">
+           <normaloff>../../../../../.designer/backup</normaloff>../../../../../.designer/backup</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QListView" name="reactionListView"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="reactionGroup">
+     <property name="title">
+      <string>Reaction Properties:</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Open By:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="reactionOpenByCmb"/>
+      </item>
+      <item row="0" column="2">
+       <widget class="QSpinBox" name="intReactionOpenTimeout">
+        <property name="suffix">
+         <string> ms</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Close By:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="reactionCloseByCmb"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSpinBox" name="intReactionCloseTimeout">
+        <property name="suffix">
+         <string> ms</string>
+        </property>
+        <property name="maximum">
+         <number>9999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Position:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QComboBox" name="positionSetCmb">
+        <item>
+         <property name="text">
+          <string>Top/Left Bar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bottom/Right Bar</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Type:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QComboBox" name="reactionTypeCmb">
+        <item>
+         <property name="text">
+          <string>Action Collection</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dockers Collection</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="3">
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item row="3" column="1" rowspan="5">
+           <widget class="QListView" name="actionsListView"/>
+          </item>
+          <item row="3" column="2">
+           <widget class="QToolButton" name="actionAddBtn">
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset theme="list-add">
+              <normaloff>../../../../../../../..</normaloff>../../../../../../../..</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QToolButton" name="actionRemoveBtn">
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset theme="list-remove">
+              <normaloff>../../../../../../../..</normaloff>../../../../../../../..</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QToolButton" name="actionOrderUpBtn">
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset theme="arrow-up">
+              <normaloff>../../../../../.designer/backup</normaloff>../../../../../.designer/backup</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QToolButton" name="actionOrderDownBtn">
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset theme="arrow-down">
+              <normaloff>../../../../../.designer/backup</normaloff>../../../../../.designer/backup</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item row="1" column="0" rowspan="5" colspan="3">
+           <widget class="QListView" name="dockerListView"/>
+          </item>
+          <item row="0" column="3">
+           <widget class="QToolButton" name="dockerIconNameBtn">
+            <property name="text">
+             <string>...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0" colspan="4">
+           <widget class="QComboBox" name="dockerDockType">
+            <item>
+             <property name="text">
+              <string>Default</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Floating</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Docked</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Floating Mobile</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Dock Mobile</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QToolButton" name="dockerAddBtn">
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset theme="list-add">
+              <normaloff>../../../../../../../..</normaloff>../../../../../../../..</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Icon:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QToolButton" name="dockerRemoveBtn">
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset theme="list-remove">
+              <normaloff>../../../../../../../..</normaloff>../../../../../../../..</iconset>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <widget class="QLabel" name="dockerIconNameLabel">
+            <property name="text">
+             <string>[Default Icon]</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="3">
+       <widget class="QPushButton" name="reactionUpdateBtn">
+        <property name="text">
+         <string>Update Reaction</string>
+        </property>
+        <property name="icon">
+         <iconset theme="document-save"/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
